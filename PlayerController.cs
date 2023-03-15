@@ -44,8 +44,8 @@ public class PlayerController : MonoBehaviour
         {
             other.gameObject.SetActive(false);
         }
-
-		if (other.gameObject.CompareTag("Teleport")) //Si colisiono con un objeto de tag "Teleport", el Player se teletransporta a la posición (.4, 0,5, .7).
+        
+        if (other.gameObject.CompareTag("Teleport")) //Si colisiono con un objeto de tag "Teleport", el Player se teletransporta a la posición (.4, 0,5, .7).
         {
             gameObject.transform.position = new Vector3(-4f, 0.5f, -7f);
         }
